@@ -65,24 +65,17 @@ The data pipeline executes automated cleaning and merges sources into a master a
 
 ### TO-BE Process (Automated / Data-Driven)
 
-```mermaid
-graph TD
-    subgraph Weather_Data_Ingestion
-        A[Weather Sensor / Weather API Stream] -->|Real-time Temp & UV Index| B(Python Margin Engine)
-    end
+1. **Weather Data Ingestion:**
+   `[Weather Sensors / API]` ➔ *(Real-time Temp & UV Index)* ➔ `[Python Margin Engine]`
 
-    subgraph Dynamic_Engine_Execution
-        B -->|Evaluates Unit COGS & Heat Index| C{Calculate Dynamic Promotion}
-        C -->|High Temp / UV Peak| D[Trigger Refreshing Drink Promo on Digital Menu]
-        C -->|Low Footfall / Rain| E[Trigger High-Margin Pairing Discount]
-    end
+2. **Dynamic Engine Execution:**
+   `[Python Margin Engine]` ➔ *(Evaluates COGS & Heat Index)* ➔ `[Dynamic Promotion Rules]`
+   - **High Temp / UV Peak:** Trigger Refreshing Drink Promo on Digital Menu
+   - **Low Footfall / Rain:** Trigger High-Margin Pairing Discount
 
-    subgraph POS_and_Executive_BI
-        D --> F[Automated POS Price Sync]
-        E --> F
-        F -->|Transaction Completed| G[(Master Data Warehouse)]
-        G -->|Live Stream| H[Google Looker Studio Executive Dashboard]
-    end
+3. **POS & Executive BI Sync:**
+   `[Digital Menu & POS]` ➔ *(Automated Price Sync)* ➔ `[Master Data Warehouse]` ➔ *(Live Stream)* ➔ `[Looker Studio Dashboard]`
+
 
 ​📂 Repository Structure
 
