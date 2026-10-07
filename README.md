@@ -64,6 +64,7 @@ The data pipeline executes automated cleaning and merges sources into a master a
 4. Store owners analyze profit margins retrospectively, resulting in high fruit spoilage during slow, rainy shifts.
 
 ### TO-BE Process (Automated / Data-Driven)
+
 ```mermaid
 graph TD
     subgraph Weather_Data_Ingestion
