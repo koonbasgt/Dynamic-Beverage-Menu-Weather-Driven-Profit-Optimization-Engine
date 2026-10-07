@@ -65,8 +65,7 @@ The data pipeline executes automated cleaning and merges sources into a master a
 
 ### TO-BE Process (Automated / Data-Driven)
 
-![Uploading mermaid_chart_1791362891402.png…]()
-
+<img width="2288" height="124" alt="mermaid_chart_1791362891402(1)" src="https://github.com/user-attachments/assets/b3acc10a-3bd2-4036-8b8f-75c91183923d" />
 
 * **Interactive BI Dashboard:** [👉 Click to View Live Looker Studio Dashboard](https://datastudio.google.com/reporting/9d2d38b8-c0dd-4855-8cab-c1d70b467289)
 * **Google Colab Code:** [👉 Click to View Python Pipeline](https://colab.research.google.com/)
