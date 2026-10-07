@@ -65,17 +65,10 @@ The data pipeline executes automated cleaning and merges sources into a master a
 
 ### TO-BE Process (Automated / Data-Driven)
 
-1. **Weather Data Ingestion:**
-   `[Weather Sensors / API]` ➔ *(Real-time Temp & UV Index)* ➔ `[Python Margin Engine]`
+![TO-BE Process Flowchart](217118.png)
 
-2. **Dynamic Engine Execution:**
-   `[Python Margin Engine]` ➔ *(Evaluates COGS & Heat Index)* ➔ `[Dynamic Promotion Rules]`
-   - **High Temp / UV Peak:** Trigger Refreshing Drink Promo on Digital Menu
-   - **Low Footfall / Rain:** Trigger High-Margin Pairing Discount
-
-3. **POS & Executive BI Sync:**
-   `[Digital Menu & POS]` ➔ *(Automated Price Sync)* ➔ `[Master Data Warehouse]` ➔ *(Live Stream)* ➔ `[Looker Studio Dashboard]`
-
+* **Interactive BI Dashboard:** [👉 Click to View Live Looker Studio Dashboard](https://datastudio.google.com/reporting/9d2d38b8-c0dd-4855-8cab-c1d70b467289)
+* **Google Colab Code:** [👉 Click to View Python Pipeline](https://colab.research.google.com/)
 
 ​📂 Repository Structure
 
